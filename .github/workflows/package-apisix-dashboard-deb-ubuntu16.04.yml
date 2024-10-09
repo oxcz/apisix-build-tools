@@ -10,7 +10,7 @@ jobs:
     env:
       DASHBOARD_VERSION: "3.0.1"
       DASHBOARD_BRANCH: "release/3.0"
-      DASHBOARD_REPO: ${{ secrets.DASHBOARD_REPO }}
+     # DASHBOARD_REPO: ${{ secrets.DASHBOARD_REPO }}
     services:
       etcd:
         image: bitnami/etcd:3.4.0
