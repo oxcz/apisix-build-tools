@@ -234,7 +234,6 @@ endif
 .PHONY: build-dashboard-deb
 build-dashboard-deb:
 ifeq ($(local_code_path), 0)
-    echo $(dashboard_repo)
 	git clone -b $(checkout) $(dashboard_repo) ./apisix-dashboard
 	$(call build,apisix-dashboard,dashboard,deb,"./apisix-dashboard")
 	rm -fr ./apisix-dashboard
