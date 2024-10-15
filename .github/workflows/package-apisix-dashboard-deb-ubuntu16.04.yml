@@ -44,7 +44,7 @@ jobs:
 
       - name: run test cases
         run: |
-          code=$(curl -k -i -m 20 -o /dev/null -s -w %{http_code} http://127.0.0.1:9000)
+          code=$(curl -k -i -m 20 -o /dev/null -s -w %{http_code} http://127.0.0.1:19000)
           if [ ! $code -eq 200 ]; then
               echo "failed: failed to install Apache APISIX Dashboard by deb"
               exit 1
