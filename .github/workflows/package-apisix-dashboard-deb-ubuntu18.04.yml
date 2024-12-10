@@ -1,4 +1,4 @@
-name: package apisix-dashboard deb for ubuntu 16.04(Focal Fossa)
+name: package apisix-dashboard deb for ubuntu 18.04(Focal Fossa)
 
 on:
   workflow_dispatch:
